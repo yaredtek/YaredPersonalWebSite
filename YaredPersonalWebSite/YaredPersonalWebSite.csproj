@@ -272,7 +272,9 @@
     <Content Include="Scripts\knockout-2.2.0.debug.js" />
     <Content Include="Scripts\knockout-2.2.0.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="UI\assets\bootstrap\css\bootstrap.css" />
     <Content Include="UI\assets\bootstrap\css\bootstrap.min.css" />
+    <Content Include="UI\assets\bootstrap\css\bootstrapmaster.css" />
     <Content Include="UI\assets\bootstrap\fonts\bootstrap\glyphicons-halflings-regular.svg" />
     <Content Include="UI\assets\bootstrap\js\bootstrap-sprockets.js" />
     <Content Include="UI\assets\bootstrap\js\bootstrap.js" />
@@ -290,6 +292,7 @@
     <Content Include="UI\assets\bootstrap\js\bootstrap\tooltip.js" />
     <Content Include="UI\assets\bootstrap\js\bootstrap\transition.js" />
     <Content Include="UI\assets\css\animate.css" />
+    <Content Include="UI\assets\css\Custom\login.css" />
     <Content Include="UI\assets\css\font-awesome.css" />
     <Content Include="UI\assets\css\font-awesome.min.css" />
     <Content Include="UI\assets\css\simple-line-icons.css" />

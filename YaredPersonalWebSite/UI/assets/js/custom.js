@@ -28,7 +28,7 @@
 	    }
 
 	    $('.nav.navbar-nav > li > a').bind("click", function (e) {
-	        e.preventDefault();
+	        //e.preventDefault();
 	        var anchor = $(this).attr("href");
 	        $('.nav.navbar-nav > li').removeClass('active');
 	        $(this).parent('li').addClass('active');
