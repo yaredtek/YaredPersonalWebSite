@@ -17,8 +17,10 @@ namespace YaredPersonalWebSite
                         "~/Scripts/jquery-ui-{version}.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
-                        "~/Scripts/jquery.unobtrusive*",
-                        "~/Scripts/jquery.validate*"));
+                        "~/Scripts/jquery.unobtrusive-ajax.js",
+                        "~/Scripts/jquery.validate-vsdoc.js",
+                        "~/Scripts/jquery.validate.js",
+                        "~/Scripts/jquery.validate.unobtrusive.js"));
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
@@ -59,7 +61,7 @@ namespace YaredPersonalWebSite
                         "~/Content/themes/base/jquery.ui.progressbar.css",
                         "~/Content/themes/base/jquery.ui.theme.css"));
 
-            bundles.Add(new StyleBundle("~/UI/assets/bootstrap/css/css").Include("~/UI/assets/bootstrap/css/bootstrap.min.css"));
+            bundles.Add(new StyleBundle("~/UI/assets/bootstrap/css/css").Include("~/UI/assets/bootstrap/css/bootstrapmaster.css"));
 
             bundles.Add(new StyleBundle("~/UI/assets/css/css").Include(
                         "~/UI/assets/css/font-awesome.min.css",
@@ -67,6 +69,8 @@ namespace YaredPersonalWebSite
                         "~/UI/assets/css/animate.css",
                         "~/UI/assets/css/style.css"));
 
+            bundles.Add(new StyleBundle("~/UI/assets/css/Custom/").Include("~/UI/assets/css/Custom/login.css"));
+            
 
         }
     }

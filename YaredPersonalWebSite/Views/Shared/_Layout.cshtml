@@ -2,16 +2,17 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
+        <title>Yared T. Nesrane - Portfolio</title>
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
-        <link href="UI/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+        @*<link href="UI/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">*@
+        @Styles.Render( "~/UI/assets/bootstrap/css/css")
         @Styles.Render("~/UI/assets/css/css")
-        @Scripts.Render("~/bundles/modernizr")
+        @Scripts.Render("~/bundles/modernizr")    
     </head>
     <body>
-        @RenderSection("featured", required: false)
         <header class="header">
             <nav class="navbar navbar-custom" role="navigation">
                 <div class="container">
@@ -22,21 +23,23 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a class="navbar-brand" href="index.html">Yared T. Nesrane</a>
+                        <a class="navbar-brand" href="/Home/Index">Yared T. Nesrane</a>
                     </div>
                     <div class="collapse navbar-collapse" id="custom-collapse">
                         <ul class="nav navbar-nav navbar-right">
-                            <li><a href="#home">Home</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#portfolio">Works</a></li>
-                            <li><a href="#skills">Skills</a></li>
-                            <li><a href="#testimonials">Testimonials</a></li>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="/Home/Index#home">Home</a></li>
+                            <li><a href="/Home/Index#services">Services</a></li>
+                            <li><a href="/Home/Index#portfolio">Works</a></li>
+                            <li><a href="/Home/Index#skills">Skills</a></li>
+                            <li><a href="/Home/Index#testimonials">Testimonials</a></li>
+                            <li><a href="/Home/Index#contact">Contact</a></li>
+                            <li class="user-login">@Html.Partial("_LoginPartial")</li>    
                         </ul>
                     </div>
                 </div>
             </nav>
         </header>
+        @RenderSection("featured", required: false)
         <div id="body">
             <script>
                 (function (i, s, o, g, r, a, m) {
@@ -76,6 +79,7 @@
         </footer>
         <!-- Footer end -->
         @Scripts.Render("~/bundles/jquery")
+        @Scripts.Render("~/bundles/jqueryval")
         @RenderSection("scripts", required: false)
     </body>
 </html>

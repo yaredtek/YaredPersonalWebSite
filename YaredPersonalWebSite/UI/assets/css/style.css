@@ -31,7 +31,15 @@ a:hover {
 /* ---------------------------------------------- /*
  * Transition elsements
 /* ---------------------------------------------- */
-
+.user-login {
+    background-color:  #BDBDBD;
+}
+.user-login a {
+    color: white !important;
+}
+#logoutForm{
+    padding-left: 15px;
+}
 
 .navbar a,
 .form-control {
@@ -314,8 +322,6 @@ textarea.form-control {
 }
 
 .calltoaction-decription{
-    padding-top: 20px;
-    padding-bottom: 30px;
     font-size: 20px;
     color: #fff;
 }
@@ -881,7 +887,7 @@ figure.effect-bubba:hover p {
 
 .cbp-qtrotator {
 	position: relative;
-	margin: 3em auto 0em auto;
+	margin: 6em auto 0em auto;
 	max-width: 90%;
 	width: 90%;
 }

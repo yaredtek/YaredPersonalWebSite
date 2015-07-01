@@ -11,7 +11,7 @@
   margin-bottom: $line-height-computed;
   border: 1px solid transparent;
   border-radius: $alert-border-radius;
-
+  color: $alert-red;
   // Headings for larger alerts
   h4 {
     margin-top: 0;
@@ -52,6 +52,9 @@
   }
 }
 
+.center{
+text-align: center;
+}
 // Alternate styles
 //
 // Generate contextual modifier classes for colorizing the alert.
