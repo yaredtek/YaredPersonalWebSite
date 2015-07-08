@@ -69,7 +69,7 @@ namespace YaredPersonalWebSite
                         "~/UI/assets/css/animate.css",
                         "~/UI/assets/css/style.css"));
 
-            bundles.Add(new StyleBundle("~/UI/assets/css/Custom/").Include("~/UI/assets/css/Custom/login.css"));
+            bundles.Add(new StyleBundle("~/UI/assets/css/Custom/css").Include("~/UI/assets/css/Custom/login.css"));
             
 
         }
