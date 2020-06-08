@@ -256,9 +256,11 @@
     <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
     <Content Include="favicon.ico" />
     <Content Include="Global.asax" />
+    <None Include="Properties\PublishProfiles\DeployGODaddy.pubxml" />
     <None Include="Properties\PublishProfiles\YaredDebug.pubxml" />
     <None Include="Properties\PublishProfiles\YaredWebSite.pubxml" />
     <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Images\businesses-transmission-header1920.jpg" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -301,6 +303,7 @@
     <Content Include="UI\assets\fonts\fontawesome-webfont.svg" />
     <Content Include="UI\assets\fonts\Simple-Line-Icons.dev.svg" />
     <Content Include="UI\assets\fonts\Simple-Line-Icons.svg" />
+    <Content Include="UI\assets\images\businesses-transmission-header1920.jpg" />
     <Content Include="UI\assets\images\client-1.jpg" />
     <Content Include="UI\assets\images\client-2.jpg" />
     <Content Include="UI\assets\images\cover.jpg" />
@@ -312,6 +315,7 @@
     <Content Include="UI\assets\images\item-6.jpg" />
     <Content Include="UI\assets\images\pattern.png" />
     <Content Include="UI\assets\images\preloader.gif" />
+    <Content Include="UI\assets\images\saad-sharif-0Tyc07NbToI-unsplash.jpg" />
     <Content Include="UI\assets\js\custom.js" />
     <Content Include="UI\assets\js\imagesloaded.pkgd.js" />
     <Content Include="UI\assets\js\jquery-1.11.1.min.js" />

@@ -349,7 +349,7 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #home {
-	background: url(../images/cover.jpg);
+	background: url(../images/saad-sharif-0Tyc07NbToI-unsplash.jpg);
 	background-color: #222;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -738,7 +738,7 @@ textarea.form-control {
 	margin: 10px 1%;
 	min-width: 100%;
 	max-width: 100%;
-	height: auto;
+	height: 160px;
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
