@@ -1,36 +1,61 @@
 ﻿@model YaredPersonalWebSite.Models.RegisterModel
-@{
-    ViewBag.Title = "Register";
-}
+    <style>
+    .validation-summary-errors ul li {
+        padding: 0px !important;
+        color: red !important;
+    }
 
-<hgroup class="title">
-    <h1>@ViewBag.Title.</h1>
-    <h2>Create a new account.</h2>
-</hgroup>
+    </style>
+<div class="row col-sm-offset-1 col-md-offset-2 col-lg-offset-3">
+    <hgroup style="margin:30px 10px 30px 20px;" class="title">
+        @*<h1>@ViewBag.Title.</h1>*@
+        <h2 style="font-style:italic">Create a new account.</h2>
+    </hgroup>
 
-@using (Html.BeginForm()) {
-    @Html.AntiForgeryToken()
-    @Html.ValidationSummary()
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+        @Html.ValidationSummary()
 
-    <fieldset>
-        <legend>Registration Form</legend>
-        <ol>
-            <li>
-                @Html.LabelFor(m => m.UserName)
-                @Html.TextBoxFor(m => m.UserName)
-            </li>
-            <li>
-                @Html.LabelFor(m => m.Password)
-                @Html.PasswordFor(m => m.Password)
-            </li>
-            <li>
-                @Html.LabelFor(m => m.ConfirmPassword)
-                @Html.PasswordFor(m => m.ConfirmPassword)
-            </li>
-        </ol>
-        <input type="submit" value="Register" />
-    </fieldset>
-}
+        <fieldset>
+            @*<legend>Registration Form</legend>*@
+            @*<ol>
+                    <li>
+                        @Html.LabelFor(m => m.UserName)
+                        @Html.TextBoxFor(m => m.UserName)
+                    </li>
+                    <li>
+                        @Html.LabelFor(m => m.Password)
+                        @Html.PasswordFor(m => m.Password)
+                    </li>
+                    <li>
+                        @Html.LabelFor(m => m.ConfirmPassword)
+                        @Html.PasswordFor(m => m.ConfirmPassword)
+                    </li>
+                </ol>*@
+            @*<input type="submit" value="Register" />*@
+
+            <div style="border: 1px solid #ccc!important; padding: 10px 16px;border-radius: 16px;" class="col-md-10">
+                <div class="form-group col-md-12">
+                    <label for="exampleInputEmail1">User Name</label>
+                    @Html.TextBoxFor(m => m.UserName, new { @class = "form-control", @placeholder = "Enter email" })
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="exampleInputPassword1">Password</label>
+                    @Html.PasswordFor(m => m.Password, new { @class = "form-control", @placeholder = "Password" })
+                </div>
+                <div class="form-group col-md-12">
+                    <label for="exampleInputPassword1">Confirm Password</label>
+                    @Html.PasswordFor(m => m.ConfirmPassword, new { @class = "form-control", @placeholder = "Password" })
+                </div>
+            </div>
+            <div class="col-md-10" style="margin: 10px;">
+                <input type="submit" class="btn-lg btn-success" style="margin:30px 30px 30px -7px;" value="Register" />
+            </div>
+        </fieldset>
+    }
+</div>
+
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")

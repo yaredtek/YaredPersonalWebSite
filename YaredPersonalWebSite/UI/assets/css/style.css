@@ -31,7 +31,18 @@ a:hover {
 /* ---------------------------------------------- /*
  * Transition elsements
 /* ---------------------------------------------- */
-
+.user-login {
+    background-color: #BDBDBD;
+}
+	.user-login:active {
+		background-color: #BDBDBD !important;
+	}
+.user-login a {
+    color: white !important;
+}
+#logoutForm{
+    padding-left: 15px;
+}
 
 .navbar a,
 .form-control {
@@ -314,8 +325,6 @@ textarea.form-control {
 }
 
 .calltoaction-decription{
-    padding-top: 20px;
-    padding-bottom: 30px;
     font-size: 20px;
     color: #fff;
 }
@@ -343,15 +352,16 @@ textarea.form-control {
 /* ---------------------------------------------- */
 
 #home {
+	/*background: url(../images/saad-sharif-0Tyc07NbToI-unsplash.jpg);*/
 	background: url(../images/cover.jpg);
 	background-color: #222;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: 50% 50%;
 	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-		 -o-background-size: cover;
-			background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 	padding: 0;
 }
 
@@ -441,7 +451,6 @@ textarea.form-control {
     z-index: 2;
 }
 .percent:after {
-    content: "%";
     font-size: 50%;
     margin-left: 0.1em;
 }
@@ -732,7 +741,7 @@ textarea.form-control {
 	margin: 10px 1%;
 	min-width: 100%;
 	max-width: 100%;
-	height: auto;
+	height: 160px;
 	background: #3085a3;
 	text-align: center;
 	cursor: pointer;
@@ -881,7 +890,7 @@ figure.effect-bubba:hover p {
 
 .cbp-qtrotator {
 	position: relative;
-	margin: 3em auto 0em auto;
+	margin: 6em auto 0em auto;
 	max-width: 90%;
 	width: 90%;
 }
@@ -954,6 +963,18 @@ figure.effect-bubba:hover p {
 .cbp-qtrotator .cbp-qtcontent img {
 	float: right;
 	margin-left: 3em;
+}
+
+.shadow-lg {
+	box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important;
+}
+
+.rounded {
+	border-radius: 0.25rem !important;
+}
+
+.bg-white {
+	background-color: #fff !important;
 }
 
 /* Example for media query */
